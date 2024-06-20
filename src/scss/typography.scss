@@ -1,4 +1,3 @@
-@import 'variables';
 h1 {
     font-size: 2.5rem;
     line-height: 3rem;
@@ -24,5 +23,5 @@ p.text-small {
 }
 
 .hightlight {
-    color: #FF4667;
+    color: $primary-color;
 }
