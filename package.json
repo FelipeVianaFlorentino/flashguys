@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "sass src/scss/styles.scss dist/css/styles.css --style compressed",
+    "build-css": "sass src/scss/styles.scss dist/css/styles.css",
     "watch-css": "sass --watch src/scss/styles.scss:dist/css/styles.css --style compressed"
+    
   },
   "keywords": [],
   "author": "",
