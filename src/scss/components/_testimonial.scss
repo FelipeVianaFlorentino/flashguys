@@ -1,0 +1,103 @@
+.testimonial-wrapper {
+    background-image: linear-gradient(to right top, #fff0fa, #f9f2fe, #f3f4ff, #eff6ff, #edf8fe);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: auto;
+
+    .testimonial {
+        width: 100%;
+        max-width: 1250px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+
+        .testimonial-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+
+            .testimonial-nav {
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 1rem;
+                color: $text-color;
+
+                span {
+                    border: 1px solid rgba($text-color, 1.0);
+                    padding: 0.25rem;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    transition: border 0.2s ease;
+
+                    &:hover {
+                        border: 1px solid rgba($text-color, 0.5);
+                    }
+                }
+            }
+        }
+
+        .reviews-wrapper {
+            .reviews {
+                min-height: 250px;
+                display: flex;
+                gap: 1rem;
+                overflow-x: auto;
+                scroll-snap-align: x mandatory;
+                -webkit-overflow-scrolling: touch;
+                width: 100%;
+                align-self: center;
+
+
+                .review-item {
+                    transition: all 0.3s ease;
+                    border: 1px solid #ccc;
+                    background-color: white;
+                    padding: 1rem;
+                    border-radius: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    min-width: 18rem;
+                    max-height: 20rem;
+                    overflow: hidden;
+                    scroll-snap-align: start;
+                    z-index: 0;
+    
+                    .item-head {
+                        font-weight: bold;
+                    }
+    
+                    .item-text {
+                        margin-top: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .testimonial-footer {
+
+            margin-top: 3rem;
+            display: flex;
+            align-items: center;
+
+            @media (max-width: 472px) {
+             flex-direction: column;
+             gap: 1rem;
+             p {
+                text-align: center;
+             }       
+            }
+
+            p {
+                opacity: 0.5;
+                margin-right: 1rem;
+            }
+            img {
+                width: auto;
+                max-height: 2rem;
+                object-fit: cover;
+                margin-right: 0.25rem;
+            }
+        }
+    }
+}

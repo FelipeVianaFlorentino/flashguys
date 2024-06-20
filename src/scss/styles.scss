@@ -1,0 +1,117 @@
+@import 'variables';
+@import 'components/navbar';
+@import 'components/buttons.scss';
+@import 'components/menu-mobile';
+@import 'components/hero';
+@import '../scss/globals.scss';
+@import '../scss/typography.scss';
+@import 'components/testimonial';
+@import 'components/why-choose';
+@import 'components/appointment';
+
+
+@font-face {
+    font-family: 'Axiforma Regular';
+    src: url('../fonts/Axiforma-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma SemiBold';
+    src: url('../fonts/Axiforma-SemiBold.ttf') format('truetype');
+    font-weight: 600; // Correspondente ao peso SemiBold
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma Medium';
+    src: url('../fonts/Axiforma-Medium.ttf') format('truetype');
+    font-weight: 500; // Correspondente ao peso Medium
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma Light';
+    src: url('../fonts/Axiforma-Light.ttf') format('truetype');
+    font-weight: 300; // Correspondente ao peso Light
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma Italic';
+    src: url('../fonts/Axiforma-Italic.ttf') format('truetype');
+    font-weight: normal; // A itálico geralmente é normal
+    font-style: italic; // Definindo o estilo como itálico
+}
+
+@font-face {
+    font-family: 'Axiforma Heavy';
+    src: url('../fonts/Axiforma-Heavy.ttf') format('truetype');
+    font-weight: 800; // Correspondente ao peso Heavy
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma ExtraBold';
+    src: url('../fonts/Axiforma-ExtraBold.ttf') format('truetype');
+    font-weight: 800; // Correspondente ao peso ExtraBold (mesmo peso que Heavy)
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma BookItalic';
+    src: url('../fonts/Axiforma-BookItalic.ttf') format('truetype');
+    font-weight: normal; // O itálico geralmente é normal
+    font-style: italic; // Definindo o estilo como itálico
+}
+
+@font-face {
+    font-family: 'Axiforma Book';
+    src: url('../fonts/Axiforma-Book.ttf') format('truetype');
+    font-weight: 400; // Correspondente ao peso Book
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma Bold';
+    src: url('../fonts/Axiforma-Bold.ttf') format('truetype');
+    font-weight: bold; // Correspondente ao peso Bold
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma Black';
+    src: url('../fonts/Axiforma-Black.ttf') format('truetype');
+    font-weight: 900; // Correspondente ao peso Black
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Axiforma', Arial, Helvetica, sans-serif;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+body {
+    height: 100%;
+    min-height: 200vh;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Axiforma', Arial, Helvetica, sans-serif;
+    color: $text-color;
+  }
+
+ul, ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

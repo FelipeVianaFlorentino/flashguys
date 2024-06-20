@@ -1,0 +1,103 @@
+button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    text-wrap: pretty;
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(94%);
+        transition: filter 0.2s ease;
+    }
+}
+
+
+button.primary {
+    background-color: $primary-color;
+    transition: filter 0.2s ease;
+}
+
+button.secondary {
+    background-color: $secondary-color;
+    color: $text-color;
+    transition: filter 0.2s ease;
+}
+
+button.outline {
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    transition: filter 0.2s ease;
+    color: $text-color;
+}
+
+button.link {
+    color: $accent-color;
+    padding: 0;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+
+// H A M B U R G E R  M E N U 
+.hamburger-wrapper {
+    
+    align-content: center;
+    margin-right: 1rem;
+    cursor: pointer;
+    z-index: 9999;
+    position: fixed;
+    left: 1rem;
+    top: 2rem;
+
+    @media (min-width: 1181px) {
+        display: none;
+    }
+    
+    .hamburger {
+        width: 1.5rem;
+        height: 20px;
+        position: relative;
+
+        .bar {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: $text-color;
+            border-radius: 10px;
+            transition: all .2s ease;
+        }
+
+        .bar1 {
+            top: 0;
+        }
+
+        .bar2 {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .bar3 {
+            bottom: 0;
+        }
+
+        .changeBar1 {
+            transform: rotate(45deg); 
+            top: 50%;
+            
+        }
+
+        .changeBar2 {
+            opacity: 0;
+            transition: all 0.1s ease;
+        }
+        
+        .changeBar3 {
+            transform: rotate(-45deg); 
+            top: 50%;
+        }
+    }
+
+}
+

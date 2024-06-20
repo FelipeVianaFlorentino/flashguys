@@ -1,0 +1,69 @@
+.appointment {
+    display: flex;
+    max-width: 1250px;
+    gap: 2rem;
+    padding: 1rem 0;
+    align-items: center;
+    margin: 2rem auto;
+    height: fit-content;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        margin: 4rem 1rem 0 1rem;
+    }
+
+    &__image {
+        flex: 1;
+        padding: 2rem;
+        margin-left: 2rem;
+        align-content: center;
+
+        background: rgb(212,237,255);
+        background: -moz-linear-gradient(306deg, rgba(212,237,255,1) 0%, rgba(212,255,245,1) 100%);
+        background: -webkit-linear-gradient(306deg, rgba(212,237,255,1) 0%, rgba(212,255,245,1) 100%);
+        background: linear-gradient(306deg, rgba(212,237,255,1) 0%, rgba(212,255,245,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d4edff",endColorstr="#d4fff5",GradientType=1);
+
+        height: fit-content;
+        border-radius: 1rem;
+
+        @media (max-width: 900px) {
+            width: 100%;
+            margin-left: 1rem;
+            padding: 1rem;
+            height: auto;
+
+        }
+
+        img {
+
+            max-width: 100%;
+            @media (max-width: 900px) {
+                max-height: 100%;
+            }
+        }
+    }
+
+    &__content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-right: 2rem;
+
+        @media (max-width: 900px) {
+            margin-right: 0;
+        }
+
+        button {
+            align-self: baseline;
+            padding-left: 4rem;
+            padding-right: 4rem;
+            
+            @media (max-width: 900px) {
+                align-self: auto;
+            }
+
+        }
+    }
+}

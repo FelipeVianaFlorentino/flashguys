@@ -1,0 +1,93 @@
+.hero {
+    max-width: 1250px;
+    height: 80vh;
+    padding: 0 2rem;
+    gap: 2rem;
+    padding: 2rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        height: auto;
+        padding: 3rem 1rem;
+    }
+
+
+    div {
+        flex: 1;
+        flex-direction: column;
+        align-content: center;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin: auto 0;
+        gap: 2rem;
+
+        span {
+            color: $primary-color;
+            width: 24px;
+        }
+
+        .hero-features {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+
+            .hero-feature {
+                display: flex;
+                flex-direction: row;
+                gap: 0.5rem
+                
+            }
+        }
+        button {
+            align-self: baseline;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+
+            .outline {
+                border: 1px solid $secondary-color;
+            }
+        }
+    }
+
+    .pre-form { 
+        background-image: url(/src/images/hero_background.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+
+        border-radius: 2rem;
+
+        min-height: 400px;
+
+        @media (max-width: 768px) {
+            padding: 3rem 0;
+        }
+
+        .schedule-simulation {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        
+            max-height: 400px;
+            min-height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 1rem;
+
+            p.schedule-head {
+                width: 100%;
+                border-bottom: 1px solid $text-color;
+                padding: 1.5rem;
+                text-align: center;
+                line-height: 1.1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "flashguys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass src/scss/styles.scss dist/css/styles.css --style compressed",
+    "watch-css": "sass --watch src/scss/styles.scss:dist/css/styles.css --style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.5"
+  }
+}

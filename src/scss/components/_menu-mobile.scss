@@ -1,0 +1,47 @@
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: auto;
+    min-width: 40vw;
+    height: 100vh;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.08);
+    z-index: 0;
+    padding: 4rem 1rem 1rem 1rem;
+
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+
+    transition: All 0.2s ease;
+
+    transform: translateX(-100%);
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-right: 4rem;
+        height: 100%;
+    }
+
+    li {
+        align-content: center;
+
+        a {
+            text-decoration: none;
+            color: $text-color;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s ease;
+        }
+        a:hover {
+            background-color: $secondary-color;
+            transition: background-color 0.2s ease;
+        }
+    }
+
+}
+
