@@ -1,0 +1,29 @@
+h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.6px;
+  font-family: "Axiforma", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: -0.6px;
+  font-family: "Axiforma", Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Axiforma", Arial, Helvetica, sans-serif;
+}
+
+p.text-small {
+  font-size: 0.875rem;
+  font-family: "Axiforma", Arial, Helvetica, sans-serif;
+}
+
+.hightlight {
+  color: #FF4667;
+}
+
+/*# sourceMappingURL=typography.css.map */

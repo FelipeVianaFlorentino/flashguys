@@ -1,3 +1,4 @@
+@import 'variables';
 button {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
@@ -15,7 +16,7 @@ button {
 
 
 button.primary {
-    background-color: $primary-color;
+    background-color: #FF4667;
     transition: filter 0.2s ease;
 }
 
