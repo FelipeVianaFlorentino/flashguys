@@ -1,13 +1,14 @@
-@import 'variables';
-@import 'components/navbar';
-@import 'components/buttons.scss';
-@import 'components/menu-mobile';
-@import 'components/hero';
-@import '../scss/globals.scss';
-@import '../scss/typography.scss';
-@import 'components/testimonial';
-@import 'components/why-choose';
-@import 'components/appointment';
+// @import 'variables'; // Caminho relativo à pasta 'scss' onde 'styles.scss' está
+@import 'components/navbar'; // Importa 'navbar.scss' da pasta 'components' dentro de 'scss'
+@import 'components/buttons'; // Importa 'buttons.scss' da pasta 'components' dentro de 'scss'
+@import 'components/menu-mobile'; // Importa 'menu-mobile.scss' da pasta 'components' dentro de 'scss'
+@import 'components/hero'; // Importa 'hero.scss' da pasta 'components' dentro de 'scss'
+@import 'globals'; // Importa 'globals.scss' diretamente da pasta 'scss'
+@import 'typography'; // Importa 'typography.scss' diretamente da pasta 'scss'
+@import 'components/testimonial'; // Importa 'testimonial.scss' da pasta 'components' dentro de 'scss'
+@import 'components/why-choose'; // Importa 'why-choose.scss' da pasta 'components' dentro de 'scss'
+@import 'components/appointment'; // Importa 'appointment.scss' da pasta 'components' dentro de 'scss'
+
 
 
 @font-face {
