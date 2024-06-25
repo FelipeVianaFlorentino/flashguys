@@ -1,7 +1,6 @@
 
 
 .hero {
-    max-width: 1250px;
     height: 80vh;
     padding: 0 2rem;
     gap: 2rem;
@@ -74,10 +73,8 @@
         .schedule-simulation {
             display: flex;
             flex-direction: column;
-            height: 100%;
+            padding-bottom: 1.5rem;
         
-            max-height: 400px;
-            min-height: 400px;
             max-width: 300px;
             margin: 0 auto;
             background-color: white;
@@ -89,7 +86,42 @@
                 padding: 1.5rem;
                 text-align: center;
                 line-height: 1.1rem;
+                margin-bottom: 1.5rem;
             }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                padding:0 1.5rem;
+
+                label {
+                    color: $text-color;
+                }
+
+
+                input {
+                    padding: 0.5rem 1rem;
+                    min-height: 4rem;
+                    font-size: 1rem;
+                    border-radius: 0.5rem;
+                    border: 1px solid rgba($text-color, $alpha: 0.75);
+                    margin-bottom: 1.25rem;
+                }
+    
+                input:focus{
+                    outline: 1.5px solid rgba($primary-color, $alpha: 0.4);
+                    border: 1.5px solid rgba($primary-color, $alpha: 1.0);
+                }
+    
+                ::-webkit-calendar-picker-indicator {
+                    font-size: 1.5rem;
+                }
+            }
+
+            button {
+                margin: 0 1.5rem;
+            }
+
         }
     }
 }

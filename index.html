@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
 
 </head>
 <body>
@@ -99,46 +99,55 @@
         </button>
     </div>
 
-        <section class="hero">
-            <div class="content">
-                <h1>
-                    Sparkle with Confidence: Trusted Cleaning for <span class="hightlight">Happy homes</span> 
-                </h1>
-                <p>
-                    Experience pristine cleanliness with our dedicated team. From homes to offices, we ensure every corner gleams with perfection.
-                </p>
-                <div class="hero-features">
-                    <div class="hero-feature">
-                        <span class="material-symbols-outlined">check</span>
-                        <p>+5,000 cleanings in 4 years</p>
-                    </div>
-                    <div class="hero-feature">
-                        <span class="material-symbols-outlined">check</span>
-                        <p>Top notch professionals</p>
-                    </div>
-                    <div class="hero-feature">
-                        <span class="material-symbols-outlined">check</span>
-                        <p>Free estimate in 4 steps</p>
-                    </div>
-                </div>
-                <div class="hero-buttons">
-                    <button class="primary">Book now</button>
-                    <button class="outline">Work with us</button>
-                </div>
-               
-                
-            </div>
-            <div class="pre-form">
-                <div class="schedule-simulation">
-                    <p class="schedule-head">
-                        Scheduling simulation
+            <section class="hero">
+                <div class="content">
+                    <h1>
+                        Sparkle with Confidence: Trusted Cleaning for <span class="hightlight">Happy homes</span> 
+                    </h1>
+                    <p>
+                        Experience pristine cleanliness with our dedicated team. From homes to offices, we ensure every corner gleams with perfection.
                     </p>
-                    <input type="date" name="" id="">
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <span class="material-symbols-outlined">check</span>
+                            <p>+5,000 cleanings in 4 years</p>
+                        </div>
+                        <div class="hero-feature">
+                            <span class="material-symbols-outlined">check</span>
+                            <p>Top notch professionals</p>
+                        </div>
+                        <div class="hero-feature">
+                            <span class="material-symbols-outlined">check</span>
+                            <p>Free estimate in 4 steps</p>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="primary">Book now</button>
+                        <button class="outline">Work with us</button>
+                    </div>
+                   
+                    
                 </div>
-            </div>
-        </section>
+                <div class="pre-form">
+                    <div class="schedule-simulation">
+                        <p class="schedule-head">
+                            Scheduling simulation
+                        </p>
+                        <form action="#">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" placeholder="Your name..">
 
-        <section class="testimonial-wrapper">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" name="time" placeholder="Your name..">
+                        </form>
+
+                        <button class="primary">Continue</button>
+                    </div>
+                </div>
+            </section>
+            
+
+        <section id="testimonial-wrapper" class="testimonial-wrapper">
             <div class="testimonial">
                 <div class="testimonial-head">
                     <h2>What our clients say</h2>
@@ -223,6 +232,47 @@
             </div>
         </section>
 
+        <section class="our-work">
+            <div class="our-work__content text">
+                <h2>Check out our work</h2>
+                <p>We take pride in delivering a high-level and reliable service. Our work garners excellent reviews and records, showcased through captivating photos that exhibit our dedication to cleaning and commitment to bringing reliable professionals to your home
+                </p>
+                <button class="primary">Book now</button>
+            </div>
+            <div class="our-work__content slider-wrapper">
+                <div class="slider">
+                    <div id="slide1" class="slide"></div>
+                    <div id="slide2" class="slide"></div>
+                    <div id="slide3" class="slide"></div>
+                    <div id="slide4" class="slide"></div>
+                    <div id="slide5" class="slide"></div>
+                </div>
+                <div class="dots-wrapper">
+                    <div class="dots">
+                        <div class="dot dot-active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button id="prev">
+                        <span class="material-symbols-rounded prev">
+                            arrow_back
+                        </span>
+                    </button>
+                    <button id="next">
+                        <span class="material-symbols-rounded next">
+                            arrow_forward
+                        </span>
+                    </button>
+                </div>
+            </div>
+                
+        </section>
 
     <footer>
 
@@ -233,6 +283,8 @@
     <script src="src/script/hero.js"></script>
     <script src="src/script/reviews.js"></script>
     <script src="src/script/whyChoose.js"></script>
+    <script src="src/script/ourWork.js"></script>
+    
 
 </body>
 
