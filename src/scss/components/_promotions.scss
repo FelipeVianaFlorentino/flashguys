@@ -1,0 +1,104 @@
+.promotion-container {
+    flex-direction: column;
+    padding: 3rem 0;
+    align-items: center;
+    text-align: center;
+    max-width: 1250px;
+    gap: 3rem;
+    height: fit-content;
+
+    .promotions {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+
+        .promotion {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            min-width: 14rem;
+            align-items: center;
+            padding: 2rem 1rem;
+            position: relative;
+            transition: height 0.5s ease;
+            overflow: hidden;
+            border-radius: 1rem;
+
+            .hover {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $primary-color;
+                align-content: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                height: 0;
+                overflow: hidden;
+                cursor: pointer;
+
+
+
+                h3 {
+                    color: white;
+                    padding: 1rem;
+                }
+            }
+
+
+            h3 {
+                font-weight: 700;
+            }
+
+            img {
+                width: 2.5rem;
+                max-height: 2.5rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .promotion:nth-child(1) {
+            background: rgb(255,237,255);
+            background: -moz-linear-gradient(38deg, rgba(255,237,255,1) 0%, rgba(255,240,251,1) 100%);
+            background: -webkit-linear-gradient(38deg, rgba(255,237,255,1) 0%, rgba(255,240,251,1) 100%);
+            background: linear-gradient(38deg, rgba(255,237,255,1) 0%, rgba(255,240,251,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffedff",endColorstr="#fff0fb",GradientType=1);
+        }
+        .promotion:nth-child(2) {
+            background: rgb(255,237,255);
+            background: -moz-linear-gradient(38deg, rgba(255,237,255,1) 0%, rgba(255,240,251,1) 100%);
+            background: -webkit-linear-gradient(38deg, rgba(255,237,255,1) 0%, rgba(255,240,251,1) 100%);
+            background: linear-gradient(38deg, rgba(255,237,255,1) 0%, rgba(255,240,251,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffedff",endColorstr="#fff0fb",GradientType=1);
+        }
+        .promotion:nth-child(3) {
+            background: rgb(255,240,250);
+            background: -moz-linear-gradient(38deg, rgba(255,240,250,1) 0%, rgba(255,242,245,1) 100%);
+            background: -webkit-linear-gradient(38deg, rgba(255,240,250,1) 0%, rgba(255,242,245,1) 100%);
+            background: linear-gradient(38deg, rgba(255,240,250,1) 0%, rgba(255,242,245,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fff0fa",endColorstr="#fff2f5",GradientType=1);
+        }
+        .promotion:nth-child(4) {
+            background: rgb(255,245,240);
+            background: -moz-linear-gradient(38deg, rgba(255,245,240,1) 0%, rgba(255,248,235,1) 100%);
+            background: -webkit-linear-gradient(38deg, rgba(255,245,240,1) 0%, rgba(255,248,235,1) 100%);
+            background: linear-gradient(38deg, rgba(255,245,240,1) 0%, rgba(255,248,235,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fff5f0",endColorstr="#fff8eb",GradientType=1);
+        }
+        .promotion:nth-child(5) {
+            background: rgb(255,246,238);
+            background: -moz-linear-gradient(38deg, rgba(255,246,238,1) 0%, rgba(255,248,234,1) 100%);
+            background: -webkit-linear-gradient(38deg, rgba(255,246,238,1) 0%, rgba(255,248,234,1) 100%);
+            background: linear-gradient(38deg, rgba(255,246,238,1) 0%, rgba(255,248,234,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fff6ee",endColorstr="#fff8ea",GradientType=1);
+        }
+        
+    }
+}
+
+
