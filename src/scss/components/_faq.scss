@@ -1,0 +1,74 @@
+.faq {
+
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+
+    &__header {
+        width: fit-content;
+        min-width: min-content;
+        flex: 1;
+        
+        h2 {
+            position: sticky;
+            top: 10rem
+        }
+    }
+
+    &__content {
+        flex: 2;
+        min-width: 25rem;
+        transition: background-color 1s ease;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        :hover {
+            background-color: $secondary-color;
+            transition: background-color 0.2s ease;
+        }
+
+        &-card {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            width: 100%;
+            height: min-content;
+            position: relative;
+            padding: 1rem;
+            border-radius: 1rem;
+
+
+            .faq-expand {
+                position: absolute;
+                right: 0;
+
+                span {
+                    font-size: 2rem;
+                    color: $primary-color;
+                    margin-right: 1rem;
+                }
+            }
+
+            .pergunta {
+                font-weight: bold;
+            }
+
+            .resposta {
+                overflow: hidden;
+                height: 0;
+            }
+
+            .resposta-active {
+                height: fit-content;
+            }
+            
+        }
+
+        &-card.card-active {
+            background-color: $secondary-color;
+        }
+    }
+}
