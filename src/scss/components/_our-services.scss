@@ -1,0 +1,119 @@
+.our-services {
+    margin-top: 5rem!important;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75vh;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 3rem 0;
+
+    background: rgb(232,244,255);
+    background: -moz-linear-gradient(38deg, rgba(232,244,255,1) 0%, rgba(247,252,255,1) 100%);
+    background: -webkit-linear-gradient(38deg, rgba(232,244,255,1) 0%, rgba(247,252,255,1) 100%);
+    background: linear-gradient(38deg, rgba(232,244,255,1) 0%, rgba(247,252,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8f4ff",endColorstr="#f7fcff",GradientType=1);
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        max-width: 1250px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+
+        &__header {
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+
+            &__controls {
+                display: flex;
+                gap: 1rem;
+                align-self: center;
+
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: rgba(255,255,255,0.1);
+                    color: $text-color;
+                    width: 40px;
+                    height: 40px;
+                    padding: 0;
+                    margin: 0;
+                    border: 1px solid $text-color;
+                    backdrop-filter: blur(0.5rem);
+                }
+    
+            }
+        }
+
+        &__slider {
+            min-height: 300px;
+            display: flex;
+            gap: 1rem;
+
+            .card {
+                width: 20rem;
+                height: fit-content;
+                padding: 1rem;
+                flex-shrink: 0;
+                position: relative;
+                background-color: white;
+                border-radius: 1rem;
+                overflow: hidden;
+
+                .card-top {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 20px;
+                    background: rgb(255,70,103);
+                    background: -moz-linear-gradient(38deg, rgba(255,70,103,1) 0%, rgba(107,70,255,1) 100%);
+                    background: -webkit-linear-gradient(38deg, rgba(255,70,103,1) 0%, rgba(107,70,255,1) 100%);
+                    background: linear-gradient(38deg, rgba(255,70,103,1) 0%, rgba(107,70,255,1) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff4667",endColorstr="#6b46ff",GradientType=1);
+                }
+
+                .card-content {
+
+                    margin-top: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+
+                    img {
+                        width: 2rem;
+                    }
+
+                    button {
+                        align-self: baseline;
+                    }
+
+                    p {
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+        }
+
+        h2 {
+            background: rgb(255,70,103);
+            background: -moz-linear-gradient(38deg, rgba(255,70,103,1) 0%, rgba(107,70,255,1) 100%);
+            background: -webkit-linear-gradient(38deg, rgba(255,70,103,1) 0%, rgba(107,70,255,1) 100%);
+            background: linear-gradient(38deg, rgba(255,70,103,1) 0%, rgba(107,70,255,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff4667",endColorstr="#6b46ff",GradientType=1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            max-width: 650px;
+        }
+
+    }
+}
