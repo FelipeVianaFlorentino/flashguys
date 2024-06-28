@@ -9,14 +9,3 @@ section {
         max-width: 1250px;
     }
 
-    input {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-        border-radius: 0.5rem;
-        border: 1px solid rgba($text-color, $alpha: 0.25);
-    }
-
-    input:focus{
-        outline: 1.5px solid rgba($primary-color, $alpha: 0.4);
-        border: 1.5px solid rgba($primary-color, $alpha: 1.0);
-    }

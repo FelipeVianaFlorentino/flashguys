@@ -8,6 +8,7 @@
 
     .testimonial {
         width: 100%;
+        max-width: 1250px;
         margin: 0 auto;
         padding: 4rem 2rem;
 
@@ -38,6 +39,7 @@
         }
 
         .reviews-wrapper {
+            
             .reviews {
                 min-height: 250px;
                 display: flex;
@@ -47,6 +49,7 @@
                 -webkit-overflow-scrolling: touch;
                 width: 100%;
                 align-self: center;
+                overflow: visible;
 
 
                 .review-item {

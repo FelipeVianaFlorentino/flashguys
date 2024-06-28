@@ -5,4 +5,5 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroMargin = headerHero.offsetHeight;
 
     hero.style.marginTop = `${heroMargin}px`;
-})
+    
+});

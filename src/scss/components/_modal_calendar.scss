@@ -1,0 +1,84 @@
+.modal-calendar-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .modal-calendar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        padding: 2rem;
+    
+        background-color: white;
+        border-radius: 1rem;
+
+
+        /* Exemplo de personalização de cores */
+        .datepicker {
+            font-family: Axiforma, sans-serif;
+            background-color: #fff;
+            border-radius: 5px;
+            width: fit-content;
+        }
+
+        
+
+        .datepicker th,
+        .datepicker td {
+            text-align: center;
+            padding: 8px;
+        }
+
+        .datepicker-days th,
+        .datepicker-months th,
+        .datepicker-years th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+
+        .datepicker-days .table-condensed tbody > tr > td {
+            border-radius: 1rem;
+        }
+
+        .datepicker-days .table-condensed tbody > tr > td:hover {
+            background-color: #f0f0f0;
+        }
+
+        .datepicker-days .table-condensed tbody > tr > td.today {
+            background-image: none;
+            background-color: white;
+            color: $primary-color;
+            font-weight: bold;
+        }
+
+        .datepicker-days .table-condensed tbody > tr > td.active,
+        .datepicker-days .table-condensed tbody > tr > td.active:hover {
+            background-image: none;
+            background-color: $primary-color; /* Cor verde sólida para o dia selecionado */
+            color: #fff; /* Cor do texto para o dia selecionado */
+        }
+
+        .datepicker-dropdown {
+            z-index: 2000; /* Ajustar z-index conforme necessário */
+        }
+
+
+    }
+}
+
+
+
+
+
