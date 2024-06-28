@@ -40,6 +40,16 @@ button.link {
     font-weight: bold;
 }
 
+button.footer {
+    color: $text-color;
+    padding: 0rem;
+    background-color: transparent;
+    font-weight: normal;
+    text-align: left;
+    width: fit-content;
+    font-size: 14px;
+}
+
 
 // H A M B U R G E R  M E N U 
 .hamburger-wrapper {
