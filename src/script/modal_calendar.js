@@ -19,17 +19,24 @@ document.addEventListener('DOMContentLoaded', () => {
         var dataSelecionada;
 
         $('#btnConfirmar').click(function() {
+            
             // Captura a data formatada do Datepicker
             dataSelecionada = $('#calendarContainer').datepicker('getFormattedDate');
-            
-            // Formata a data para "June 30, 2024"
-            var dataFormatada = formatarDataParaTexto(dataSelecionada);
-            
-            // Atualiza o texto do elemento HTML com a data selecionada
-            document.getElementById('data-selecionada').textContent = dataFormatada;
-            
-            // Esconde o modal
-            document.querySelector('.modal-calendar-wrapper').style.display = 'none';
+
+            if (dataSelecionada) {
+                // Formata a data para "June 30, 2024"
+                var dataFormatada = formatarDataParaTexto(dataSelecionada);
+                
+                // Atualiza o texto do elemento HTML com a data selecionada
+                document.getElementById('data-selecionada').textContent = dataFormatada;
+
+                // Esconde o modal
+                document.querySelector('.modal-calendar-wrapper').style.display = 'none';
+                
+            } else {
+                // Esconde o modal
+                document.querySelector('.modal-calendar-wrapper').style.display = 'none';
+            }
         });
     });
 
