@@ -50,6 +50,7 @@
         <div class="modal-calendar">
             <h3>Select a date</h3>
             <div id="calendarContainer"></div>
+            <button id="btnConfirmar" class="primary">Confirm</button>
         </div>
     </div>
     
@@ -169,15 +170,19 @@
                     <div class="label">Date</div>
                     <div class="input day">
                         <i class="material-symbols-rounded">calendar_today</i>
-                        <p>June 30, 2024</p>
+                        <p id="data-selecionada">June 30, 2024</p>
                         <i class="material-symbols-rounded arrow-drop-down">arrow_drop_down</i>
                     </div>
                 </div>
                 <div class="form">
                     <div class="label">Time</div>
-                    <div class="input day">
+                    <div class="input time">
                         <i class="material-symbols-rounded">schedule</i>
-                        <p>10:30 am</p>
+                        <select name="time" id="select-time">
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                        </select>
                         <i class="material-symbols-rounded arrow-drop-down">arrow_drop_down</i>
                     </div>
                 </div>
@@ -604,6 +609,7 @@
     <script src="src/script/promotions.js"></script>
     <script src="src/script/faq.js"></script>
     <script src="src/script/modal_calendar.js"></script>
+    <script src="src/script/modal_horario.js"></script>
 
     
 

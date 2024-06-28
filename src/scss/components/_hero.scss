@@ -116,6 +116,29 @@
                
             }
 
+            select {
+                outline: none;
+                border: none;
+                background-color: transparent;
+                width: 100%;
+                -webkit-appearance: none; 
+                -moz-appearance: none;
+                appearance: none; 
+                cursor: pointer;
+                font-size: 1rem;
+            }
+            #select-time::-ms-expand {
+                display: none; /* Esconde a seta no IE10+ */
+            }
+            #select-time option {
+                background-color: #fff;
+                color: #333;
+            }
+
+            .input.time {
+                cursor:default;
+            }
+
             button {
                 margin: 1rem;
                 margin-bottom: 0;

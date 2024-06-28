@@ -5,5 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroMargin = headerHero.offsetHeight;
 
     hero.style.marginTop = `${heroMargin}px`;
-    
 });
+
+document.querySelector('.input.day').addEventListener('click', () => {
+    const modalCalendar = document.querySelector('.modal-calendar-wrapper');
+    modalCalendar.style.display = ('flex');
+})
