@@ -1,16 +1,14 @@
 
 .testimonial-wrapper {
     background-image: linear-gradient(to right top, #fff0fa, #f9f2fe, #f3f4ff, #eff6ff, #edf8fe);
-    display: flex;
-    flex-direction: column;
     overflow: hidden;
     height: auto;
 
-    .testimonial {
+    section.testimonial {
         width: 100%;
-        max-width: 1250px;
         margin: 0 auto;
-        padding: 4rem 2rem;
+        display: flex;
+        flex-direction: column;
 
         .testimonial-head {
             display: flex;

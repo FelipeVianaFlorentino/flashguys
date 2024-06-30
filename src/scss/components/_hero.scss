@@ -2,15 +2,8 @@
 
 .hero {
     height: 80vh;
-    padding: 0 2rem;
     gap: 2rem;
-    padding: 2rem;
 
-    @media (max-width: 768px) {
-        flex-direction: column;
-        height: auto;
-        padding: 3rem 1rem;
-    }
 
 
     div {
@@ -65,10 +58,6 @@
         border-radius: 2rem;
 
         min-height: 400px;
-
-        @media (max-width: 768px) {
-            padding: 3rem 0;
-        }
 
         .schedule-simulation {
             display: flex;

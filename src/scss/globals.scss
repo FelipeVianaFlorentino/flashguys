@@ -3,9 +3,14 @@
 section {
         display: flex;
         width: auto;
-        height: 75vh;
         margin: 0 auto;
         color: $text-color;
-        max-width: 1250px;
+        max-width: 1400px;
+        padding: 2.5rem 1rem;
     }
 
+    @media (max-width: 1400px) {
+        section {
+            max-width: 1200px;
+        }
+    }

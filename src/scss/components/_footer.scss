@@ -4,7 +4,6 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 6rem 0 2rem 0;
-    margin: 4rem 0;
 
     background: rgb(255,70,192);
     background: -moz-linear-gradient(38deg, rgba(255,70,192,0.05) 0%, rgba(21,165,246,0.05) 100%);
@@ -14,7 +13,6 @@ footer {
 
     .footer__main {
         width: 100%;
-        max-width: 1250px;
         display: flex;
         flex-wrap: wrap; /* Adiciona flex-wrap */
         gap: 1rem;
