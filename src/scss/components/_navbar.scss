@@ -12,13 +12,17 @@ header {
 
     nav {
         display: flex;
-        max-width: 1400px;
         justify-content: space-between;
         margin: 0 auto;
         align-content: center;
 
         @media (max-width: 1180px) {
             justify-content: left;
+        }
+
+        .buttons-nav {
+            display: flex;
+            gap: 1rem;
         }
 
         a {

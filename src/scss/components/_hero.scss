@@ -1,13 +1,12 @@
 
 .hero-wrapper {
-
-
-    border: 2px dashed black;
+    overflow: hidden;
 
     .hero {
         height: 80vh;
         gap: 2rem;
         position: relative;
+        margin-bottom: 0;
     
         img {
             position: absolute;
