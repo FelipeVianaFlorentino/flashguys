@@ -3,10 +3,12 @@
     overflow: hidden;
 
     .hero {
-        height: 80vh;
+        height: fit-content;
         gap: 2rem;
         position: relative;
         margin-bottom: 0;
+        justify-content: center;
+        align-items: center;
     
         img {
             position: absolute;
@@ -14,6 +16,10 @@
             left: 50%;
             top: 0;
             z-index: -1;
+
+            @media (max-width: 768px) {
+               display: none;
+            }
         }
     
     
@@ -62,18 +68,40 @@
         }
     
         .pre-form { 
-            min-height: 400px;
+
+            width: 100%;
+            
+            @media (max-width: 768px) {
+                background-color: $secondary-color;
+                padding: 5rem;
+                background-image: url(https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F3e05e1059faef26605a551bdc8638217.cdn.bubble.io%2Ff1714452283463x938766090336881300%2Finterior-shot-modern-house-kitchen-with-large-windows_181624-24368.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                object-position: center;
+                object-fit: cover;
+                background-size: cover;
+            }
+
+            @media (max-width: 576px) {
+                padding: 2rem;
+            }
+
     
             .schedule-simulation {
                 display: flex;
                 flex-direction: column;
                 padding-bottom: 1.5rem;
             
+                width: 100%;
                 max-width: 300px;
-                margin: 0 auto;
+                margin: auto;
                 background-color: white;
                 border-radius: 1rem;
                 overflow: hidden;
+
+                @media (max-width: 576px) {
+                    max-width: 100%;
+                }
     
                 p.schedule-head {
                     width: 100%;
