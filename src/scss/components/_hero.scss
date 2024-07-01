@@ -1,138 +1,147 @@
 
-
-.hero {
-    height: 80vh;
-    gap: 2rem;
-
+.hero-wrapper {
+    height: fit-content;
+    overflow: hidden;
 
 
-    div {
-        flex: 1;
-        flex-direction: column;
-        align-content: center;
-    }
-    .content {
-        display: flex;
-        flex-direction: column;
-        margin: auto 0;
+
+    .hero {
+        height: 80vh;
         gap: 2rem;
-
-        span {
-            color: $primary-color;
-            width: 24px;
+        position: relative;
+    
+        img {
+            position: absolute;
+            height: 100%;
+            left: 50%;
+            top: 0;
+            z-index: -1;
         }
-
-        .hero-features {
+    
+    
+    
+        div {
+            flex: 1;
+            flex-direction: column;
+            align-content: center;
+        }
+        .content {
             display: flex;
             flex-direction: column;
-            gap: 0.75rem;
-
-            .hero-feature {
+            margin: auto 0;
+            gap: 2rem;
+    
+            span {
+                color: $primary-color;
+                width: 24px;
+            }
+    
+            .hero-features {
                 display: flex;
-                flex-direction: row;
-                gap: 0.5rem
-                
-            }
-        }
-        button {
-            align-self: baseline;
-        }
-
-        .hero-buttons {
-            display: flex;
-            flex-direction: row;
-            gap: 1rem;
-
-            .outline {
-                border: 1px solid $secondary-color;
-            }
-        }
-    }
-
-    .pre-form { 
-        background-image: url(https://3e05e1059faef26605a551bdc8638217.cdn.bubble.io/f1718923459807x262284187237837200/hero_background.png);
-        background-repeat: no-reeat;
-        background-position: center;
-        background-size:cover;
-
-        border-radius: 2rem;
-
-        min-height: 400px;
-
-        .schedule-simulation {
-            display: flex;
-            flex-direction: column;
-            padding-bottom: 1.5rem;
-        
-            max-width: 300px;
-            margin: 0 auto;
-            background-color: white;
-            border-radius: 1rem;
-            overflow: hidden;
-
-            p.schedule-head {
-                width: 100%;
-                padding: 1.5rem;
-                text-align: center;
-                line-height: 1.1rem;
-                background-color: $secondary-color;
-
-            }
-
-            .form {
-                margin: 0.6rem 1rem;
-
-                .label {
-                    opacity: 0.5;
-                }
-
-                .input {
+                flex-direction: column;
+                gap: 0.75rem;
+    
+                .hero-feature {
                     display: flex;
                     flex-direction: row;
-                    padding: 1rem;
-                    position: relative;
-                    background-color: $secondary-color;
-                    border-radius: 0.75rem;
-                    gap: 0.5rem;
-                    position: relative;
-                    cursor: pointer;
+                    gap: 0.5rem
+                    
                 }
-
-                .arrow-drop-down {
-                    position: absolute;
-                    right: 1rem;
-                }
-               
             }
-
-            select {
-                outline: none;
-                border: none;
-                background-color: transparent;
-                width: 100%;
-                -webkit-appearance: none; 
-                -moz-appearance: none;
-                appearance: none; 
-                cursor: pointer;
-                font-size: 1rem;
-            }
-            #select-time::-ms-expand {
-                display: none; /* Esconde a seta no IE10+ */
-            }
-            #select-time option {
-                background-color: #fff;
-                color: #333;
-            }
-
-            .input.time {
-                cursor:default;
-            }
-
             button {
-                margin: 1rem;
-                margin-bottom: 0;
+                align-self: baseline;
             }
-
+    
+            .hero-buttons {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+    
+                .outline {
+                    border: 1px solid $secondary-color;
+                }
+            }
+        }
+    
+        .pre-form { 
+            min-height: 400px;
+    
+            .schedule-simulation {
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 1.5rem;
+            
+                max-width: 300px;
+                margin: 0 auto;
+                background-color: white;
+                border-radius: 1rem;
+                overflow: hidden;
+    
+                p.schedule-head {
+                    width: 100%;
+                    padding: 1.5rem;
+                    text-align: center;
+                    line-height: 1.1rem;
+                    background-color: $secondary-color;
+    
+                }
+    
+                .form {
+                    margin: 0.6rem 1rem;
+    
+                    .label {
+                        opacity: 0.5;
+                    }
+    
+                    .input {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 1rem;
+                        position: relative;
+                        background-color: $secondary-color;
+                        border-radius: 0.75rem;
+                        gap: 0.5rem;
+                        position: relative;
+                        cursor: pointer;
+                    }
+    
+                    .arrow-drop-down {
+                        position: absolute;
+                        right: 1rem;
+                    }
+                   
+                }
+    
+                select {
+                    outline: none;
+                    border: none;
+                    background-color: transparent;
+                    width: 100%;
+                    -webkit-appearance: none; 
+                    -moz-appearance: none;
+                    appearance: none; 
+                    cursor: pointer;
+                    font-size: 1rem;
+                }
+                #select-time::-ms-expand {
+                    display: none; /* Esconde a seta no IE10+ */
+                }
+                #select-time option {
+                    background-color: #fff;
+                    color: #333;
+                }
+    
+                .input.time {
+                    cursor:default;
+                }
+    
+                button {
+                    margin: 1rem;
+                    margin-bottom: 0;
+                }
+    
+            }
         }
     }
+    
 }
